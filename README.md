@@ -4,6 +4,21 @@ I couldn't find a tool that generates uuid's of various formats _conveniently_ a
 
 This crate only depends on `uuid` and `clap` crates.
 
+# Installation
+
+Since for uuid version 6, 7 and 8 the `uuid` crate needs to be compiled with `RUSTFLAGS="--cfg uuid_unstable"`. For you, this means when you install `ruuid`, you need to pass
+that unless you want compilation errors. For example:
+
+```bash
+RUSTFLAGS="--cfg uuid_unstable" cargo install ruuid
+```
+
+or
+
+```bash
+RUSTFLAGS="--cfg uuid_unstable" cargo install --git https://github.com/westernwontons/ruuid
+```
+
 # Usage
 
 There are subcommands for each type of supported uuid's. Any uuid formats supported by `uuid` are supported by `rUUID` as well.
