@@ -1,4 +1,4 @@
-/// Create a version 1 UUID# rUUID
+# ruuid
 
 I couldn't find a tool that generates uuid's of various formats _conveniently_ and programatically over the cli and rUUID was born. Necessity is the mother of "I can't find it, I'll make it".
 
