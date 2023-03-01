@@ -6,17 +6,25 @@ This crate only depends on `uuid` and `clap` crates.
 
 # Installation
 
-Since for uuid version 6, 7 and 8 the `uuid` crate needs to be compiled with `RUSTFLAGS="--cfg uuid_unstable"`. For you, this means when you install `ruuid`, you need to pass
-that unless you want compilation errors. For example:
+Since for uuid version 6, 7 and 8 the `uuid` crate needs to be compiled with `RUSTFLAGS="--cfg uuid_unstable"`. This flag is passed thanks to a build scripts, but if you ever
+experience errors like "Uuid::new_v7 is not found" or something like that, just pass that flag I mentioned and you should be set.
+
+You're command would look like:
 
 ```bash
 RUSTFLAGS="--cfg uuid_unstable" cargo install ruuid
 ```
 
+Otherwise, just run:
+
+```bash
+cargo install ruuid
+```
+
 or
 
 ```bash
-RUSTFLAGS="--cfg uuid_unstable" cargo install --git https://github.com/westernwontons/ruuid
+cargo install --git https://github.com/westernwontons/ruuid
 ```
 
 # Usage

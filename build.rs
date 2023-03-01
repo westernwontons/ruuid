@@ -1,3 +1,3 @@
 fn main() {
-    println!("cargo:rustc-flags=--cfg uuid_unstable");
+    println!("cargo:rustc-cfg=uuid_unstable");
 }
