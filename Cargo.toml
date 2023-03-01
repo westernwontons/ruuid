@@ -1,13 +1,13 @@
 [package]
 name = "ruuid"
-version = "0.1.0"
+version = "0.1.1"
 edition = "2021"
 authors = ["Nagy Botond benjiwonton@gmail.com"]
 description = "Cli tool to generate UUIDs"
 license-file = "LICENSE"
 repository = "https://github.com/westernwontons/ruuid"
 keywords = ["cli", "uuid"]
-categories = ["command-line-utilites"]
+categories = ["command-line-utilities"]
 
 [dependencies]
 anyhow = "1.0.69"
