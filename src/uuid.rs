@@ -3,14 +3,14 @@ use uuid::Uuid;
 
 /// Format the UUID according to the arguments passed in
 fn formatted_uuid(uuid: Uuid, args: &UuidArguments) -> String {
-    if args.braced {
-        uuid.as_braced().to_string()
-    } else if args.hyphenated {
-        uuid.as_hyphenated().to_string()
+    if args.simple {
+        return uuid.as_simple().to_string();
+    } else if args.braced {
+        return uuid.as_braced().to_string();
     } else if args.urn {
-        uuid.as_urn().to_string()
+        return uuid.as_urn().to_string();
     } else {
-        uuid.as_simple().to_string()
+        return uuid.as_hyphenated().to_string();
     }
 }
 
