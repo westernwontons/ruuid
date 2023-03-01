@@ -22,6 +22,9 @@ pub enum Command {
     V7(UuidArguments),
     /// Create a version 8 UUID
     V8(UuidArguments),
+
+    /// Get the current version
+    Version,
 }
 
 #[derive(Debug, Args)]

@@ -10,5 +10,6 @@ pub fn handle_command(cmd: Command) {
         Command::V6(args) => uuid_v6(args),
         Command::V7(args) => uuid_v7(args),
         Command::V8(args) => uuid_v8(args),
+        Command::Version => println!("{}", env!("CARGO_PKG_VERSION")),
     }
 }
