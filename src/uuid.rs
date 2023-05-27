@@ -4,13 +4,13 @@ use uuid::Uuid;
 /// Format the UUID according to the arguments passed in
 fn formatted_uuid(uuid: Uuid, args: &UuidArguments) -> String {
     if args.simple {
-        return uuid.as_simple().to_string();
+        uuid.as_simple().to_string()
     } else if args.braced {
-        return uuid.as_braced().to_string();
+        uuid.as_braced().to_string()
     } else if args.urn {
-        return uuid.as_urn().to_string();
+        uuid.as_urn().to_string()
     } else {
-        return uuid.as_hyphenated().to_string();
+        uuid.as_hyphenated().to_string()
     }
 }
 
