@@ -1,6 +1,7 @@
 mod cli;
 mod handle_command;
 mod uuid;
+mod ulid;
 
 use clap::Parser;
 use cli::CommandLineArguments;

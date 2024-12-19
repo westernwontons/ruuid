@@ -23,6 +23,9 @@ pub enum Command {
     /// Create a version 8 UUID
     V8(UuidArguments),
 
+    /// Create a ULID id
+    Ulid,
+
     /// Get the current version
     Version,
 }
