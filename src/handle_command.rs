@@ -13,7 +13,7 @@ pub fn handle_command(cmd: Command) {
         Command::V8(args) => uuid_v8(args),
         Command::Ulid => {
             let ulid = ulid();
-            println!("{ulid}");
+            print!("{ulid}");
         }
         Command::Version => println!("{}", env!("CARGO_PKG_VERSION")),
     }
